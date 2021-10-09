@@ -1,7 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  const licenseType = license.license;
   const yourLicense = ''
   if (licenseType === 'MIT') {
     yourLicense = `![License](https://img.shields.io/badge/License-MIT-yellow.svg)`
@@ -34,45 +33,47 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Licensing:
-    ${renderLicenseBadge}
-    ${renderLicenseLink}
-    
-    ## Table of Contents
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Contribution](#contribution)
-    -[Testing](#testing)
-    -[Questions](#questions)
+  ![License](https://img.shields.io/badge/License-${data.licensing}-lightblue.svg)
 
-    ### Description:
-    ${data.description}
+  ## Table of Contents
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Contribution](#contribution)
+  -[Testing](#testing)
+  -[Questions](#questions)
 
-    ### Installation:
-    ${data.installation}
+  ### Description:
+  ${data.description}
 
-    ### Usage:
-    ${data.usage}
+  ### Installation:
+  ${data.installation}
 
-    ### Contribution
-    ${data.contribtuion}
+  ### Usage:
+  ${data.usage}
 
-    ### Testing 
-    ${data.testing}
+  ### Contribution
+  ${data.contribution}
 
-    ### License
-    ${data.license}
+  ### Testing 
+  ${data.testing}
 
-    ### Questions
-    -Github: [${data.github}](https://github.com/${data.github})
-    -Email: ${data.email}
+  ### License
+  ${data.licensing}
+  ${data.renderLicenseLink}
+
+  ### Questions
+  -Github: [${data.github}](https://github.com/${data.github})
+  -Email: ${data.email}
 `;
 }
 

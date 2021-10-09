@@ -1,61 +1,35 @@
-# jfdas
+# fds
 
   ## Licensing:
-    function renderLicenseBadge(license) {
-  const licenseType = license.license;
-  const yourLicense = ''
-  if (licenseType === 'MIT') {
-    yourLicense = `![License](https://img.shields.io/badge/License-MIT-yellow.svg)`
-  } else if (licenseType === 'Apache 2.0') {
-    yourLicense = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`
-  } else if (licenseType === 'Boost 1.0') {
-    yourLicense = `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]`
-  } else {
-    license.license = "N/A"
-  }
-  return yourLicense;
-}
-    function renderLicenseLink(license) {
-  const licenseType = license.license;
-  const yourLink = ''
-  if (licenseType === 'MIT') {
-    yourLink = `(https://opensource.org/licenses/MIT)`
-  } else if (licenseType === 'Apache 2.0') {
-    yourLink = `(https://opensource.org/licenses/Apache-2.0)`
-  } else if (licenseType === 'Boost 1.0') {
-    yourLink= `(https://www.boost.org/LICENSE_1_0.txt)`
-  } else {
-    license.license = "N/A"
-  }
-  return yourLink;
-}
-    
-    ## Table of Contents
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Contribution](#contribution)
-    -[Testing](#testing)
-    -[Questions](#questions)
+  ![License](https://img.shields.io/badge/License-MIT,Apache 2.0,Boost 1.0-lightblue.svg)
 
-    ### Description:
-    fadssdfdsafdsfdfdfdsfdsa
+  ## Table of Contents
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Contribution](#contribution)
+  -[Testing](#testing)
+  -[Questions](#questions)
 
-    ### Installation:
-    afdsafdsafdsfdafdsad
+  ### Description:
+  fdsa
 
-    ### Usage:
-    afdsafdsafdsafsfsafdsa
+  ### Installation:
+  dsa
 
-    ### Contribution
-    undefined
+  ### Usage:
+  fdsa
 
-    ### Testing 
-    sdfadsfdsafdsaf
+  ### Contribution
+  undefined
 
-    ### License
-    undefined
+  ### Testing 
+  dsa
 
-    ### Questions
-    -Github: [undefined](https://github.com/undefined)
-    -Email: dafsdsafdsafdsfds
+  ### License
+  MIT,Apache 2.0,Boost 1.0
+  undefined
+
+  ### Questions
+  -Github: [andreaspencer](https://github.com/andreaspencer)
+  -Email: and@gmail.com

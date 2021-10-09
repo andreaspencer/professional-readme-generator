@@ -88,7 +88,7 @@ const questions = [
         type: 'checkbox',
         name: 'licensing',
         message: 'Choose a license for your project',
-        choices: ['MIT', ],
+        choices: ['MIT', "Apache 2.0", "Boost 1.0" ],
         validate: licensingInput => {
             if (licensingInput) {
                 return true;
@@ -99,10 +99,10 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
+        name: 'github',
         message: 'What is your Github username',
-        validate: questionInput => {
-            if (questionInput) {
+        validate: githubInput => {
+            if (githubInput) {
                 return true;
             } else {
                 console.log('You need to enter a valid Github username!');
