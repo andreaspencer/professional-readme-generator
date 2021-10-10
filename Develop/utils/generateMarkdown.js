@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license !== 'no license') {
     return `
-    ![badge](https://img.shields.io/badge/license-${license}-blue)
+    (https://img.shields.io/badge/license-${license}-blue)
     `;
   } else {
     return '';
