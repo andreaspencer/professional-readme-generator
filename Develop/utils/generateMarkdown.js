@@ -2,7 +2,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'no license') {
-    return `![badge](https://img.shields.io/badge/license-${license}-blue)
+    return `
+    ![badge](https://img.shields.io/badge/license-${license}-blue)
     `;
   } else {
     return '';
@@ -46,12 +47,12 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Contribution](#contribution)
-  -[Testing](#testing)
-  -[Questions](#questions)
+  *[Description](#description)
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[Contribution](#contribution)
+  *[Testing](#testing)
+  *[Questions](#questions)
 
   ### Description:
   ${data.description}
@@ -61,6 +62,8 @@ function generateMarkdown(data) {
 
   ### Usage:
   ${data.usage}
+  For more information on how to add screenshots for example, follow the below link:
+  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
 
   ### Contribution
   ${data.contribution}
@@ -71,8 +74,8 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ### Questions
-  -Github: [${data.github}](https://github.com/${data.github})
-  -Email: ${data.email}(mailto:${data.email})
+  [Github:](https://github.com/${data.github})
+  [Email: ${data.email}](mailto:${data.email})
 `;
 }
 
