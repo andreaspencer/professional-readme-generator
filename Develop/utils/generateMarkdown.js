@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license !== 'no license') {
     return `
-    [badge](https://img.shields.io/badge/license-${license}-blue)
+    ![badge](https://img.shields.io/badge/license-${license}-blue)
     `;
   } else {
     return '';
@@ -26,9 +26,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'no license') {
-    return `
-    ### [License]
-    
+    return `  
     The application is covered under the following license:
     
     ${renderLicenseLink(license)}
@@ -40,18 +38,21 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# 
-  
-  ${data.title}
+  return `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   *[Description](#description)
+
   *[Installation](#installation)
+
   *[Usage](#usage)
+
   *[Contribution](#contribution)
+
   *[Testing](#testing)
+
   *[Questions](#questions)
 
   ### Description:
@@ -71,10 +72,12 @@ function generateMarkdown(data) {
   ### Testing 
   ${data.testing}
 
+  ### Licensing
   ${renderLicenseSection(data.license)}
 
   ### Questions
   [Github: ${data.github}](https://github.com/${data.github})
+
   [Email: ${data.email}](mailto:${data.email})
 `;
 }
