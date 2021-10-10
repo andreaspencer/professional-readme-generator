@@ -25,12 +25,12 @@
 
   ### Usage:
   The user cna use this application by opening Visual Studio navigating to the terminal in VS. Making sure you're under the develop file then enter "node index.js" into the terminal. You will then be prompted by node to answer a series of questions regarding your project. Once finished you will see a "Success" prompt and can navigate to the README file to see your professional README.
+  
+  <img width="1213" alt="Screen Shot 2021-10-10 at 1 12 51 PM" src="https://user-images.githubusercontent.com/87836575/136712356-11c2421c-4051-4bb8-a851-db7710c35467.png">
 
   For more information on how to add screenshots for example, follow the below link:
 
-  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-  
-  
+  [Mark Down Tutorial](https://agea.github.io/tutorial.md/) 
 
   ### Contribution
   I am currently not accepting any contributions.
